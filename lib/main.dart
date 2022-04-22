@@ -15,34 +15,34 @@ class MandarinaApp extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 56.0,
               backgroundColor: Colors.amber,
               backgroundImage: NetworkImage(
                 'https://iteragrow.com/wp-content/uploads/2018/04/buyer-persona-e1545248524290.jpg',
               ),
             ),
-            Text(
-              "Fiorela Guadalupe",
+            const Text(
+              "Fiorela Fatima Guadalupe",
               style: TextStyle(
                   color: Colors.white60,
                   fontSize: 24,
                   fontFamily: "TitanOne-Regular"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
-            Text('FLUTTER DEVELOPER',
+            const Text('FLUTTER DEVELOPER',
                 style: TextStyle(
                     color: Colors.white60,
                     fontSize: 16,
                     letterSpacing: 1.6,
                     fontFamily: "Lobster-Regular")),
-            SizedBox(
+            const SizedBox(
               width: 130,
               child: Divider(thickness: 0.35, color: Colors.white54),
             ),
-            Card(
+            const Card(
               child: ListTile(
                 title: Text('+51 987654321'),
                 subtitle: Text('Telefono'),
@@ -51,8 +51,8 @@ class MandarinaApp extends StatelessWidget {
                     Icon(Icons.check_circle_outline, color: Colors.indigo),
               ),
             ),
-            SizedBox(height: 4),
-            Card(
+            const SizedBox(height: 4),
+            const Card(
               child: ListTile(
                 title: Text('jose.ramirez@gmail.com'),
                 subtitle: Text('Mail'),
@@ -61,10 +61,22 @@ class MandarinaApp extends StatelessWidget {
                     Icon(Icons.check_circle_outline, color: Colors.indigo),
               ),
             ),
+            const SizedBox(height: 8),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
                   "assets/images/facebook.png",
+                  height: 50,
+                ),
+                const SizedBox(width: 30),
+                Image.asset(
+                  "assets/images/twitter.png",
+                  height: 50,
+                ),
+                const SizedBox(width: 30),
+                Image.asset(
+                  "assets/images/instagram.png",
                   height: 50,
                 ),
               ],
